@@ -4,7 +4,7 @@ WORKDIR /home/ilovedocker/app
 
 # Затем скопируйте файлы package.json и package-lock.json 
 # из поддиректории packages в корень рабочей директории и установите зависимости при помощи npm.
-COPY packages/package*.json ./
+COPY ./packages/package*.json ./
 RUN npm i --omit-dev
 
 # После этого скопируйте исходники проекта из поддиректории src в корень рабочей директории.
