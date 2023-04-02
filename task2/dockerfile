@@ -9,6 +9,6 @@ WORKDIR /home/ilovedocker/app
 # передав другую первым аргументом, должно быть невозможно.
 # После прохождения тестов скопируйте Dockerfile в директорию task3.
 
-COPY hello.sh /home/ilovedocker/app
+COPY hello.sh .
 
-ENTRYPOINT sh hello.sh
+ENTRYPOINT ["sh", "hello.sh"]
